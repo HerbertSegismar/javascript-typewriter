@@ -17,8 +17,8 @@ body {
 
 #typewriterText {
     border-right: 4px solid white;
-    margin-top: 200px;
     font-size: 32px;
     font-family: Oswald, sans-serif;
     color: white;
+    margin: 200px 20px;
 }
