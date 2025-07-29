@@ -1,4 +1,8 @@
 const text = document.getElementById('typewriterText');
+let currentPhrase = []; 
+let deleting = false;
+let i = 0;
+let j = 0;
 
 const phrases = [
     'Hello!', 
@@ -9,10 +13,14 @@ const phrases = [
 ]
 
 function type(){
-    for (let i = 0; i < phrases.length; i++){
-        text.innerHTML = phrases[i];
+    if (i < phrases.length){
+        if (!deleting && j <= phrases[i].length){
+            currentPhrase.push(phrases[i][j]);
+            text.innerHTML = currentPhrase.join('');
+            j++;
+        }
     }
-    setTimeout(type, 1000);
+    setTimeout(type, 300);
 }
 
 type();
