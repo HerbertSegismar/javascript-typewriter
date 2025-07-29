@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: screen;
+    height: screen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: burlywood;
+}
+
+#typewriterText {
+    border-right: 4px solid white;
+    margin-top: 200px;
+    font-size: 32px;
+    font-family: Oswald, sans-serif;
+    color: white;
+}
