@@ -10,10 +10,9 @@ const phrases = [
 
 function type(){
     for (let i = 0; i < phrases.length; i++){
-        setTimeout(function(){
-            text.innerHTML = phrases[i];
-        }, i * 1000);
+        text.innerHTML = phrases[i];
     }
+    setTimeout(type, 1000);
 }
 
 type();
